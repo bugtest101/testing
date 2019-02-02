@@ -7,6 +7,7 @@ script:
   - git clone https://github.com/codingo/Interlace.git
   - ls -al 
   - cd Interlace
+  - sudo apt-get install python3-pip
   - sudo pip3 install -r requirements.txt
   - sudo python3 setup.py install
   - interlace -t "https://arghh.free.beeceptor.com" -c "echo _target_ _port_" -p 80-85 -threads 50 
