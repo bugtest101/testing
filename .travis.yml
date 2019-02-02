@@ -9,5 +9,5 @@ script:
   - sudo whoami
   - sudo id
   - cat /etc/passwd
-  - curl -v -X GET 'https://arghh.free.beeceptor.com/test1' -H 'some-header: some-value'
-  - curl -v -X GET 'https://arghh.free.beeceptor.com/test2' -H 'some-header: some-value'
+  - wget https://arghh.free.beeceptor.com/test1
+  - wget https://arghh.free.beeceptor.com/test2
