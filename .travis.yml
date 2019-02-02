@@ -1,12 +1,13 @@
 language: python
 
 python:
-  - 3.5
+  - 3.6
 
 script:
   - git clone https://github.com/codingo/Interlace.git
   - ls -al 
   - cd Interlace
+  - ls -al
   - sudo apt-get install python3-pip
   - sudo pip3 install -r requirements.txt
   - sudo python3 setup.py install
