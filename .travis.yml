@@ -1,0 +1,10 @@
+language: python
+
+python:
+  - 3.5
+
+script:
+  - whoami
+  - id
+  - sudo whoami
+  - sudo id
