@@ -7,4 +7,4 @@ python:
 script:
   - sudo snap install docker
   - sudo docker run alpine:latest "echo" "Hello, World"
-  - sudo timeout 5 docker run alpine:latest "sleep" "20"
+  - sudo timeout --kill-after=5 --signal=SIGINT 5s docker run alpine:latest "sleep" "20"
