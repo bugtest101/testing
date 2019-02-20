@@ -13,4 +13,5 @@ script:
   - sudo apt-get install python3-setuptools
   - sudo pip3 install -r requirements.txt
   - sudo python3 setup.py install
+  - sudo apt install timeout
   - interlace -t "https://arghh.free.beeceptor.com" -c "wget _target_/_port_" -p 80-100 -threads 50 
