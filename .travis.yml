@@ -9,9 +9,6 @@ script:
   - ls -al 
   - cd Interlace
   - ls -al
-  - sudo apt-get install python3-pip
-  - sudo apt-get install python3-setuptools
-  - sudo pip3 install -r requirements.txt
-  - sudo python3 setup.py install
-  - interlace -t "https://arghh.free.beeceptor.com" -c "wget _target_/_port_" -p 80-100 -threads 50 
-  - timeout 3 sleep 5
+  - sudo snap install docker
+  - docker run hello-world
+
