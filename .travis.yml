@@ -10,5 +10,5 @@ script:
   - cd Interlace
   - ls -al
   - sudo snap install docker
-  - docker run hello-world
-
+  - sudo docker run hello-world
+  - sudo docker run alpine:latest "echo" "Hello, World"
