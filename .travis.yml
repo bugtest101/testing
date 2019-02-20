@@ -5,10 +5,6 @@ python:
   - 3.6
 
 script:
-  - git clone https://github.com/codingo/Interlace.git
-  - ls -al 
-  - cd Interlace
-  - ls -al
   - sudo snap install docker
-  - sudo docker run hello-world
   - sudo docker run alpine:latest "echo" "Hello, World"
+  - sudo timeout 5 docker run alpine:latest "sleep" "20"
